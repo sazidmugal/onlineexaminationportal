@@ -1,0 +1,24 @@
+/* Remove all default margins/padding and set universal border box */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Force HTML, Body, and React Root to fill the entire browser window */
+html, body, #root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #0f172a !important; /* Full dark navy background */
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  overflow-x: hidden;
+}
+
+/* Ensure React root container centers items smoothly across the full width */
+#root {
+  display: flex;
+  flex-direction: column;
+}
